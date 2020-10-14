@@ -111,7 +111,9 @@ serverPath <- function(server = c("chirps", "trmm"), version = "2.0") {
       stop("Specified version not available or (currently) not supported.\n")
 
     #paste0("ftp://chg-ftpout.geog.ucsb.edu/pub/org/chg/products/CHIRPS-", version)
-    paste0("https://data.chc.ucsb.edu/products/CHIRPS-", version)
+    #paste0("https://data.chc.ucsb.edu/products/CHIRPS-", version)
+
+    paste0("ftp://ftp.chc.ucsb.edu/pub/org/chg/products/CHIRPS-", version)
 
   ## trmm
   } else if (server[1] == "trmm") {
